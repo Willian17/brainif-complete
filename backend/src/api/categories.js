@@ -1,6 +1,7 @@
 module.exports = db =>{
     const save = async (req , res) =>{ 
         const categorie = {...req.body}
+        console.log(categorie)
         await db('categories')
         .insert(categorie)
         .then(_ => res.status(204).send())

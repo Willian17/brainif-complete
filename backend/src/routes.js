@@ -14,10 +14,10 @@ routes.post('/student-signup' , api.postStudent)
 routes.post('/student-signin' , api.studentSignin)
 
 // apagar dps
-routes.get('/teachers' , api.getTeacher)
-routes.get('/questions' , api.getQuestions)
-routes.get('/responses' , api.getResponse)
-routes.get('/students' , api.getStudent)
+// routes.get('/teachers' , api.getTeacher)
+// routes.get('/questions' , api.getQuestions)
+// routes.get('/responses' , api.getResponse)
+// routes.get('/students' , api.getStudent)
 
 // routes.delete('/question/:id' , api.deleteQuestion)
 // routes.delete('/responses/:id' , api.deleteResponse)
@@ -26,9 +26,10 @@ routes.get('/students' , api.getStudent)
 routes.post('/validateToken' , api.validateToken)
 
 // privadas
+routes.post('/categories', api.postCategories)
 routes.get('/categories' , ( api.getCategories))
 
-routes.all('/categories/:id' , passport.authenticate())
+// routes.all('/categories/:id' , passport.authenticate())
 routes.get('/categories/:id' , api.getByIdCategories)
 
 routes.all('/questions' , passport.authenticate())

@@ -26,16 +26,9 @@ export default {
   background: #fff;
 }
 
-.category:hover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-  background-color: #d6cfcf;
-  border: solid 0.5px #797979;
-}
 .category a:hover {
   text-decoration: none;
-}
+} 
 .category a span {
   color: #7a849c;
   transition: color 1s;

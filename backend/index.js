@@ -7,7 +7,7 @@ app.use(express.json())
 app.use(cors())
 app.use(routes)
 
-const porta = 3001
+const porta =  process.env.PORT || 3001
 app.listen(porta , () =>{
     console.log('Servidor ligado na porta ' + porta)
 })  

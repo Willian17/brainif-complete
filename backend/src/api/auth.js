@@ -1,6 +1,8 @@
-const {authSecret} = require('../../.env')
 const jwt = require('jwt-simple')
 const bcrypt = require('bcrypt-nodejs')
+require('dotenv/config')
+
+const authSecret = process.env.AUTHSECRET
 
 module.exports = (db) =>{
 

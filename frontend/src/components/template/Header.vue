@@ -1,5 +1,5 @@
 <template>
-  <header class="header" >
+  <header :class="user ? 'header' : 'header-home'">
     <b-navbar :toggleable="false"  type="dark">
       <b-navbar-brand router-link :to="user ? '/' : '/home'">
         <i class="fa fa-graduation-cap"></i> BrainIF
@@ -40,10 +40,13 @@ export default {
 .header {
   grid-area: header;
   background-color: #372476;
-
+}
+.header-home{
+  grid-area: header;
+  background-color: #1565d8;
 }
 
-.header > img {
+/* .header > img {
   background-color: #372476;
-}
+} */
 </style>
