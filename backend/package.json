@@ -4,8 +4,8 @@
   "description": "Fórum para instituto federal",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon",
-    "production": "pm2 start index.js --name brainif-backend"
+    "dev": "nodemon",
+    "build": "node"
   },
   "author": "Willian",
   "license": "ISC",
