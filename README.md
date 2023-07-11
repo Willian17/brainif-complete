@@ -44,12 +44,24 @@
   $ git clone https://github.com/Willian17/brainif-complete.git
   
   ### Instalar Dependencias
+  Backend
   ```
+  $ cd backend
+  $ npm install
+  ```
+  Frontend
+  ```
+  $ cd frontend
   $ npm install
   ```
   ### Executar Aplicação
+  Backend
   ```
-  $ npm start
+  $ npm run dev
+  ```
+  Frontend
+  ```
+  $ npm run serve
   ```
 
   
